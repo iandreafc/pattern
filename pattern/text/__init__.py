@@ -49,7 +49,7 @@ from pattern.helpers import encode_string, decode_string
 decode_utf8 = decode_string
 encode_utf8 = encode_string
 
-PUNCTUATION = ".,;:!?()\[]{}`'\"@#$^&*+-|=~_”—“"
+PUNCTUATION = r".,;:!?()\[]{}`'\"@#$^&*+-|=~_”—“"
 
 def ngrams(string, n=3, punctuation=PUNCTUATION, continuous=False):
     """ Returns a list of n-grams (tuples of n successive words) from the given string.
@@ -1308,7 +1308,7 @@ diacritics = "àáâãäåąāæçćčςďèéêëēěęģìíîïīłįķļľņ
 
 # Common punctuation marks.
 PUNCTUATION = \
-punctuation = ".,;:!?()[]{}`''\"@#$^&*+-|=~_"
+punctuation = r".,;:!?()[]{}`''\"@#$^&*+-|=~_"
 
 # Common abbreviations.
 ABBREVIATIONS = \
